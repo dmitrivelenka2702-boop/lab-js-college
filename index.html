@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Предметна область «Коледж»</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
-
     <h1>Предметна область «Коледж»</h1>
 
     <p class="description">
@@ -19,27 +16,14 @@
         Представлення основних сутностей предметної області «Коледж».
     </p>
 
-    <!-- Кнопки-вкладки -->
     <div class="tabs">
-        <button class="tab-button active" data-tab="students">
-            Студенти
-        </button>
-
-        <button class="tab-button" data-tab="teachers">
-            Викладачі
-        </button>
-
-        <button class="tab-button" data-tab="subjects">
-            Навчальні дисципліни
-        </button>
+        <button class="tab-button active" data-tab="students">Студенти</button>
+        <button class="tab-button" data-tab="teachers">Викладачі</button>
+        <button class="tab-button" data-tab="subjects">Навчальні дисципліни</button>
     </div>
 
-
-    <!-- Таблиця студентів -->
     <section id="students" class="tab-content active">
-
         <h2>Студенти</h2>
-
         <table>
             <thead>
                 <tr>
@@ -52,48 +36,12 @@
                     <th>Середній бал</th>
                 </tr>
             </thead>
-
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Іваненко Максим</td>
-                    <td>МН-31</td>
-                    <td>3</td>
-                    <td>073 Менеджмент</td>
-                    <td>Денна</td>
-                    <td>10.2</td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>Петренко Анна</td>
-                    <td>МН-31</td>
-                    <td>3</td>
-                    <td>073 Менеджмент</td>
-                    <td>Денна</td>
-                    <td>11.1</td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>Коваленко Артем</td>
-                    <td>МН-41</td>
-                    <td>4</td>
-                    <td>073 Менеджмент</td>
-                    <td>Денна</td>
-                    <td>9.8</td>
-                </tr>
-            </tbody>
+            <tbody id="students-body"></tbody>
         </table>
-
     </section>
 
-
-    <!-- Таблиця викладачів -->
     <section id="teachers" class="tab-content">
-
         <h2>Викладачі</h2>
-
         <table>
             <thead>
                 <tr>
@@ -106,48 +54,12 @@
                     <th>Кабінет</th>
                 </tr>
             </thead>
-
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Дмитрів Олена Веніамінівна</td>
-                    <td>Викладач</td>
-                    <td>Вища</td>
-                    <td>Менеджмент</td>
-                    <td>15 років</td>
-                    <td>21</td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>Кравченко Петро Васильович</td>
-                    <td>Викладач</td>
-                    <td>Перша</td>
-                    <td>Історія України</td>
-                    <td>12 років</td>
-                    <td>15</td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>Шевченко Тетяна Валеріївна</td>
-                    <td>Викладач</td>
-                    <td>Вища</td>
-                    <td>Економіка</td>
-                    <td>18 років</td>
-                    <td>18</td>
-                </tr>
-            </tbody>
+            <tbody id="teachers-body"></tbody>
         </table>
-
     </section>
 
-
-    <!-- Таблиця дисциплін -->
     <section id="subjects" class="tab-content">
-
         <h2>Навчальні дисципліни</h2>
-
         <table>
             <thead>
                 <tr>
@@ -160,45 +72,11 @@
                     <th>Форма контролю</th>
                 </tr>
             </thead>
-
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Менеджмент</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>90</td>
-                    <td>Дмитрів О. В.</td>
-                    <td>Іспит</td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>Маркетинг</td>
-                    <td>3</td>
-                    <td>6</td>
-                    <td>90</td>
-                    <td>Дмитрів О. В.</td>
-                    <td>Залік</td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>Організація виробництва</td>
-                    <td>4</td>
-                    <td>7</td>
-                    <td>90</td>
-                    <td>Дмитрів О. В.</td>
-                    <td>Іспит</td>
-                </tr>
-            </tbody>
+            <tbody id="subjects-body"></tbody>
         </table>
-
     </section>
-
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
